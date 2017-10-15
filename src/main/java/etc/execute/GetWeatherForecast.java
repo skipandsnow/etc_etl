@@ -301,9 +301,10 @@ public class GetWeatherForecast {
 		sb.append("濕度,濕度度量,風向描述,風向縮寫,風向縮寫_單位,風速,風速_單位,風速等級,風速等級_單位,降雨機率,紫外線指數\n");
 		System.out.print(sb.toString());
 		try {
-			fw = new FileWriter("C:\\Users\\skipandsnow\\Google 雲端硬碟\\外部競賽\\交通部ETC競賽\\weather_forecast_7days.csv");
+//			fw = new FileWriter("C:\\Users\\skipandsnow\\Google 雲端硬碟\\外部競賽\\交通部ETC競賽\\weather_forecast_7days.csv");
+			fw = new FileWriter("G:\\google雲端硬碟\\外部競賽\\交通部ETC競賽\\weather_forecast_7days.csv");
 			bw = new BufferedWriter(fw);
-			bw.write(sb.toString());
+//			bw.write(sb.toString());
 			while (iter.hasNext()) {
 				Object key = iter.next();
 				Object val = forecastMap.get(key);
